@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>utility_fragment_13</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Hidden eerie tree image -->
+  <img id="hidden-tree" src="https://i.imgur.com/W7i0q5F.png" alt="hidden tree">
+
+  <!-- Heartbeat audio -->
+  <audio id="heartbeatAudio" loop preload="auto">
+    <source src="heartbeat.mp3" type="audio/mpeg">
+  </audio>
+
+  <header>
+    <h1>Checker Cipher Interface</h1>
+  </header>
+
+  <div class="container">
+    <div class="glitch">𝙘𝙝𝙖𝙞𝙣.𝙘𝙝𝙖𝙞𝙣.𝙘𝙝𝙖𝙞𝙣.𝙘𝙝𝙖𝙞𝙣</div>
+
+    <label>Enter input:</label>
+    <input type="text" id="inputText" placeholder="..."><br>
+
+    <button onclick="runCipher()">Cipher</button>
+    <button onclick="runDecipher()">Decipher</button>
+
+    <label>Output:</label>
+    <textarea id="outputText" readonly></textarea>
+
+    <div class="hint-line" onclick="revealHint()">[ log incomplete ]</div>
+
+    <!-- 10 Hidden Buttons -->
+    <button class="hidden-button" style="top: 10px; left: 10px;" onclick="secretMsg(1)"></button>
+    <button class="hidden-button" style="top: 20px; right: 30px;" onclick="secretMsg(2)"></button>
+    <button class="hidden-button" style="bottom: 20px; left: 40px;" onclick="secretMsg(3)"></button>
+    <button class="hidden-button" style="top: 50px; right: 80px;" onclick="secretMsg(4)"></button>
+    <button class="hidden-button" style="bottom: 10px; right: 10px;" onclick="secretMsg(5)"></button>
+    <button class="hidden-button" style="top: 80px; left: 80px;" onclick="secretMsg(6)"></button>
+    <button class="hidden-button" style="bottom: 100px; left: 200px;" onclick="secretMsg(7)"></button>
+    <button class="hidden-button" style="bottom: 150px; right: 180px;" onclick="secretMsg(8)"></button>
+    <button class="hidden-button" style="top: 120px; right: 150px;" onclick="secretMsg(9)"></button>
+    <button class="hidden-button" style="bottom: 80px; left: 120px;" onclick="secretMsg(10)"></button>
+  </div>
+
+  <div class="footer-note">
+    parsed segment recovered from roblox_services_2013<br>
+    echo://null.user [valid]
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
